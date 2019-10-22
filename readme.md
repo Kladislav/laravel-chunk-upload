@@ -16,13 +16,13 @@ Easy to use service/library for chunked upload with supporting multiple JS libra
 **1. Install via composer**
 
 ```
-composer require pion/laravel-chunk-upload
+composer require kladislav/laravel-chunk-upload
 ```
     
 **2. Add the service provider (Laravel 5.4 and below - supports Auto discovery)**
 
 ```php
-\Pion\Laravel\ChunkUpload\Providers\ChunkUploadServiceProvider::class
+\Kladislav\LaravelChunkUpload\Providers\ChunkUploadServiceProvider::class
 ```    
 
 **3. Publish the config (Laravel 5.2 and above, optional)**
