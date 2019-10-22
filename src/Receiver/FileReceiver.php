@@ -79,7 +79,7 @@ class FileReceiver
      */
     public function isUploaded()
     {
-        return $this->file->isValid();
+        return is_object($this->file) && UPLOAD_ERR_NO_FILE !== $this->file->getError();
     }
 
     /**
