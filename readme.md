@@ -28,7 +28,7 @@ composer require kladislav/laravel-chunk-upload
 **3. Publish the config (Laravel 5.2 and above, optional)**
 
 ```
-php artisan vendor:publish --provider="Pion\Laravel\ChunkUpload\Providers\ChunkUploadServiceProvider"
+php artisan vendor:publish --provider="Kladislav\LaravelChunkUpload\Providers\ChunkUploadServiceProvider"
 ```
 
 
@@ -68,4 +68,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute changes. All contri
 was written by [Martin Kluska](http://kluska.cz) and is released under the 
 [MIT License](LICENSE.md).
 
-Copyright (c) 2016-2018 Martin Kluska
+Copyright (c) 2016-2019 Martin Kluska
