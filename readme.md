@@ -22,13 +22,13 @@ composer require kladislav/laravel-chunk-upload
 **2. Add the service provider (Laravel 5.4 and below - supports Auto discovery)**
 
 ```php
-\Kladislav\LaravelChunkUpload\Providers\ChunkUploadServiceProvider::class
+\Kladislav\LaravelChunkUpload\ServiceProvider::class
 ```    
 
 **3. Publish the config (Laravel 5.2 and above, optional)**
 
 ```
-php artisan vendor:publish --provider="Kladislav\LaravelChunkUpload\Providers\ChunkUploadServiceProvider"
+php artisan vendor:publish --provider="Kladislav\LaravelChunkUpload\ServiceProvider"
 ```
 
 
