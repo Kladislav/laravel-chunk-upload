@@ -10,6 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
+    - name: PHP Lint
+      uses: michaelw90/PHP-Lint@1.0.0
+      
     - name: Validate composer.json and composer.lock
       run: composer validate
 
