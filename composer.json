@@ -1,53 +1,53 @@
 {
-  "name": "kladislav/laravel-chunk-upload",
-  "description": "Service for chunked upload with several js providers",
-  "license": "MIT",
-  "keywords": [
-    "laravel",
-    "chunk",
-    "upload"
-  ],
-  "type": "library",
-  "authors": [
-    {
-      "name": "Vladislav Kim",
-      "email": "kim@mediacube.network"
+    "name": "kladislav/laravel-chunk-upload",
+    "description": "Service for chunked upload with several js providers",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "chunk",
+        "upload"
+    ],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Vladislav Kim",
+            "email": "kim@mediacube.network"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": "^6.0 || ^7.0 || ^8.0 || ^9.0|^10.0",
+        "illuminate/http": "^6.0 || ^7.0 || ^8.0 || ^9.0|^10.0",
+        "illuminate/console": "^6.0 || ^7.0 || ^8.0 || ^9.0|^10.0",
+        "illuminate/filesystem": "^6.0 || ^7.0 || ^8.0 || ^9.0|^10.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^8.0",
+        "phpunit/phpunit": "^8.0|^9.5.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kladislav\\LaravelChunkUpload\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kladislav\\LaravelChunkUpload\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "phpunit": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kladislav\\LaravelChunkUpload\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
     }
-  ],
-  "require": {
-    "php": ">=7.2",
-    "illuminate/support": "^6.0 || ^7.0 || ^8.0 || ^9.0",
-    "illuminate/http": "^6.0 || ^7.0 || ^8.0 || ^9.0",
-    "illuminate/console": "^6.0 || ^7.0 || ^8.0 || ^9.0",
-    "illuminate/filesystem": "^6.0 || ^7.0 || ^8.0 || ^9.0"
-  },
-  "require-dev": {
-    "orchestra/testbench": "^4.0",
-    "phpunit/phpunit": "^8.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Kladislav\\LaravelChunkUpload\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Kladislav\\LaravelChunkUpload\\Tests\\": "tests"
-    }
-  },
-  "scripts": {
-    "phpunit": "phpunit"
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Kladislav\\LaravelChunkUpload\\ServiceProvider"
-      ]
-    }
-  },
-  "config": {
-    "preferred-install": "dist",
-    "sort-packages": true,
-    "optimize-autoloader": true
-  }
 }
